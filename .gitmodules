@@ -1,3 +1,0 @@
-[submodule "firstApp"]
-	path = include/firstApp
-	url = git@github.com:victornovy/ionic-course/firstApp.git
