@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BuyoutPage } from './buyout/buyout';
 
 @IonicPage()
 @Component({
@@ -13,6 +14,10 @@ export class ShopPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ShopPage');
+  }
+
+  buyoutItens(item: string) {
+      this.navCtrl.push(BuyoutPage, {itemName: item});
   }
 
 }
