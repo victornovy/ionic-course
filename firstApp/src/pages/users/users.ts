@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UserPage } from './user/user';
 
-/**
- * Generated class for the UsersPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-users',
@@ -19,6 +14,10 @@ export class UsersPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsersPage');
+  }
+
+  onLoadUser(name: string) {
+      this.navCtrl.push(UserPage, {userName: name});
   }
 
 }
