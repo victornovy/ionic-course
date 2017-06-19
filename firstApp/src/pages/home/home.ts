@@ -9,10 +9,11 @@ import { ShopPage } from '../shop/shop';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+    usersPage = UsersPage;
 
-  }
+  constructor(public navCtrl: NavController) {}
 
+  // this is not necessary if you are using directives 
   onClickButton() {
       this.navCtrl.push(UsersPage);
   }

@@ -8,6 +8,7 @@
 
 <ion-content padding>
     <button ion-button (click)="onClickButton()">Users</button>
+    <button ion-button [navPush]="usersPage">Users Directive</button>
     <hr>
     <button ion-button (click)="onClickShop()">Shop</button>
 </ion-content>
