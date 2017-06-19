@@ -13,9 +13,14 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {}
 
-  // this is not necessary if you are using directives 
+  // this is not necessary if you are using directives
   onClickButton() {
-      this.navCtrl.push(UsersPage);
+      this.navCtrl.push(UsersPage, {}, {
+          animate: true,
+          direction: 'back',
+          duration: 5000,
+          easing: 'ease-out'
+      });
   }
 
   onClickShop() {
