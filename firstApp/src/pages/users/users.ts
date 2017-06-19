@@ -9,15 +9,42 @@ import { UserPage } from './user/user';
 })
 export class UsersPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+
+  onLoadUser(name: string) {
+      this.navCtrl.push(UserPage, {userName: name});
+  }
+
+  ionViewCanEnter() {
+      console.log('ionViewCanEnter UsersPage');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsersPage');
   }
 
-  onLoadUser(name: string) {
-      this.navCtrl.push(UserPage, {userName: name});
+  ionViewWillEnter() {
+      console.log('ionViewWillEnter UsersPage');
+  }
+
+  ionViewDidEnter() {
+      console.log('ionViewDidEnter UsersPage');
+  }
+
+  ionViewcanLeave() {
+      console.log('ionViewcanLeave UsersPage');
+  }
+
+  ionViewWillLeave() {
+      console.log('ionViewWillLeave UsersPage');
+  }
+
+  ionViewDidLeave() {
+      console.log('ionViewDidLeave UsersPage');
+  }
+
+  ionViewWillUnload() {
+      console.log('ionViewWillUnload UsersPage');
   }
 
 }
