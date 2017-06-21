@@ -7,8 +7,8 @@ import { LibraryPage } from '../library/library';
     selector: 'page-tabs',
     template: `
         <ion-tabs selectedIndex="1">
-            <ion-tab [root]="favoritesPage" tabTitle="Favorites" ionIcon="star"></ion-tab>
-            <ion-tab [root]="libraryPage" tabTitle="Library" ionIcon="book"></ion-tab>
+            <ion-tab [root]="favoritesPage" tabTitle="Favorites" tabIcon="star"></ion-tab>
+            <ion-tab [root]="libraryPage" tabTitle="Library" tabIcon="book"></ion-tab>
         </ion-tabs>
     `
 })
