@@ -16,4 +16,8 @@ export class QuotesPage {
     ionViewDidLoad() {
         this.quoteGroup = this.navParams.data;
     }
+
+    onAddToFavorite() {
+        console.log('Added to Favorite');
+    }
 }
