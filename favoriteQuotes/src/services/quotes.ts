@@ -18,4 +18,10 @@ export class QuotesService {
     getFavoriteQuotes() {
         return this.favoriteQuotes.slice();
     }
+
+    isQuoteFavorite(quote: Quote) {
+        return this.favoriteQuotes.find((quoteEl) => {
+            return quoteEl.id === quote.id;
+        })
+    }
 }
