@@ -12,7 +12,7 @@ export class QuotesService {
             return favQuote.id === quote.id;
         });
 
-        this.favoriteQuotes.slice(position, 1);
+        this.favoriteQuotes.splice(position, 1);
     }
 
     getFavoriteQuotes() {
