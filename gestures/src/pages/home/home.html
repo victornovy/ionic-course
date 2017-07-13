@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Gestures
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h1 text-center>Enter the right code</h1>
+    <p text-center>
+        Tap twice, press four times
+    </p>
+
+    <ion-list>
+        <ion-item>
+          Tapped: {{ tapped }}
+        </ion-item>
+        <ion-item>
+          Pressed: {{ pressed }}
+        </ion-item>
+    </ion-list>
+
+    <div text-center>
+        <button ion-button small color="danger" (click)="resetAll()">Reset All</button>
+        <button ion-button small color="danger" (click)="resetTaps()">Reset 'Taps'</button>
+        <button ion-button small color="danger" (click)="resetPresses()">Reset 'Presses'</button>
+    </div>
+
+    <ion-grid>
+        <ion-row text-center>
+            <ion-col class="ion-col" (tap)="tapEvent()">Tap here</ion-col>
+            <ion-col class="ion-col" (press)="pressEvent()">Press here</ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
