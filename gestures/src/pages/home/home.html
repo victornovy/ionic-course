@@ -9,7 +9,8 @@
 <ion-content padding>
     <h1 text-center>Enter the right code</h1>
     <p text-center>
-        Tap twice, press four times
+        <span *ngIf="!won">{{ challenge }}</span>
+        <span *ngIf="won">{{ youWon }}</span>
     </p>
 
     <ion-list>
