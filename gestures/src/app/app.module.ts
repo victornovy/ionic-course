@@ -6,13 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ResetButtons } from '../components/reset-buttons'
+import { ResetButtonsComponent } from '../components/reset-buttons'
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ResetButtons
+    ResetButtonsComponent
   ],
   imports: [
     BrowserModule,

@@ -9,8 +9,8 @@
 <ion-content padding>
     <h1 text-center>Enter the right code</h1>
     <p text-center>
-        <span *ngIf="!won">{{ challenge }}</span>
-        <span *ngIf="won">{{ youWon }}</span>
+        <span *ngIf="!checkChallenge()">{{ challenge }}</span>
+        <span *ngIf="checkChallenge()">{{ youWon }}</span>
     </p>
 
     <ion-list>
@@ -25,8 +25,8 @@
     <reset-buttons
         (onResetAll)="resetAll()"
         (onResetTaps)="resetTaps()"
-        (onResetPresses)="resetPresses()"
-        ></reset-buttons>
+        (onResetPresses)="resetPresses()">
+    </reset-buttons>
 
     <ion-grid>
         <ion-row text-center>

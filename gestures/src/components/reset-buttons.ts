@@ -5,7 +5,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
     selector: 'reset-buttons',
     templateUrl: './reset-buttons.html'
 })
-export class ResetButtons {
+export class ResetButtonsComponent {
 
     @Output() public onResetAll = new EventEmitter();
     @Output() public onResetTaps = new EventEmitter();
