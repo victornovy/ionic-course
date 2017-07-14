@@ -22,11 +22,11 @@
         </ion-item>
     </ion-list>
 
-    <div text-center>
-        <button ion-button small color="danger" (click)="resetAll()">Reset All</button>
-        <button ion-button small color="danger" (click)="resetTaps()">Reset 'Taps'</button>
-        <button ion-button small color="danger" (click)="resetPresses()">Reset 'Presses'</button>
-    </div>
+    <reset-buttons
+        (onResetAll)="resetAll()"
+        (onResetTaps)="resetTaps()"
+        (onResetPresses)="resetPresses()"
+        ></reset-buttons>
 
     <ion-grid>
         <ion-row text-center>
